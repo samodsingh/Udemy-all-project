@@ -1,29 +1,29 @@
-let calcAvarag = (a, b, c) => (a + b +c) / 3;
-console.log(calcAvarag (3, 4, 5));
+let friend1 = 'Michal';
+let friend2 = 'Steven';
+let friend3 = 'Peter';
 
+let friends =['Michael', 'Steven', 'Peter'];
+console.log(friends);
+console.log(friends[0]);
+console.log(friends[1]);
 
-// Test 1 
-let scoreDolphins = calcAvarag (44, 23, 71);
-let scoreKoales = calcAvarag (65,54, 49);
-console.log(scoreDolphins , scoreKoales);
+console.log(friends[friends.length-1]);
 
-let checkWinner = function (avgDolhins,avgKoalas ){
-    if(avgDolhins >= 2 * avgKoalas){
-    console.log(` Dolphins win 🏆(${avgKoalas} vs. ${avgDolhins} )`);  
-    }
-    else if (avgKoalas >= 2 * avgDolhins){
-        console.log(`Koalas wi 🏆(${avgKoalas} vs.${avgDolhins})`);
-    }else{
-        console.log('No team wins...')
-    }
+friends[2] = 'singh';
+console.log(friends);
+
+let firstName = 'jonas';
+let jonas = [firstName, 'Schnedtmann', 2037- 1991, 'teachr', friends];
+console.log(jonas);
+console.log(jonas.length);
+
+let calcAge = function(birthYeah){
+    return 2037- birthYeah;
+
 }
+let Years = [1990, 1967, 2002,2010, 2018 ];
+let age1 = calcAge (Years[0]);
+let age2 = calcAge (Years[1]);
+let age3 = calcAge (Years[Years.length -1]);
+console.log(age1, age2, age3);
 
-checkWinner(scoreKoales, scoreKoales);
-checkWinner(576 , 111);
-
-// Test 2
-
-scoreDolphins = calcAvarag  (85 , 54 ,41);
-scoreKoalas =calcAvarag (23, 34, 27);
-console.log(scoreDolphins, scoreKoales);
-checkWinner(scoreDolphins, scoreKoales);
