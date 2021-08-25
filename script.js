@@ -1,29 +1,24 @@
-let friend1 = 'Michal';
-let friend2 = 'Steven';
-let friend3 = 'Peter';
+let jonas =[
+    'jonas',
+    'samod',
+    2037-1991,
+    'teacher',
+    ['Macheal', 'peter', 'umesh'],
+    true,
+];
 
-let friends =['Michael', 'Steven', 'Peter'];
-console.log(friends);
-console.log(friends[0]);
-console.log(friends[1]);
+// 0, 1, 2, 3, 4,
+// 4, 3, 2, 1, 0
 
-console.log(friends[friends.length-1]);
+for ( let i = jonas.length  ;i >= 0 ;i--) {
+    console.log(i , jonas[i])
+};
+for(let exercise =1 ; exercise <= 5;exercise++){
+    console.log(`---------starting exercise ${exercise}`)
 
-friends[2] = 'singh';
-console.log(friends);
+console.log('samod kumar singh');
 
-let firstName = 'jonas';
-let jonas = [firstName, 'Schnedtmann', 2037- 1991, 'teachr', friends];
-console.log(jonas);
-console.log(jonas.length);
-
-let calcAge = function(birthYeah){
-    return 2037- birthYeah;
-
-}
-let Years = [1990, 1967, 2002,2010, 2018 ];
-let age1 = calcAge (Years[0]);
-let age2 = calcAge (Years[1]);
-let age3 = calcAge (Years[Years.length -1]);
-console.log(age1, age2, age3);
-
+for (let rep= 1 ;rep < 6; rep++){
+    console.log(` Exercise ${exercise }: Lifiing weight repetition ${rep} :🎆`)
+};
+};
